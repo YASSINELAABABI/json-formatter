@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ↑ tells mobile browsers to not zoom out weirdly -->
+
+    <title>JSON Formatter - My First Tool</title>
+    <!-- ↑ appears in browser tab and when shared -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ↑ connects our separate CSS file -->
+</head>
+<body>
+
+    <main>
+        <!-- ↑ main title of the page -->   
+        <h1>JSON Formatter</h1>
+    
+        <!-- ↑ big box where user pastes JSON
+        id="json-input"   → we will use this id from JavaScript
+        placeholder       → hint text when empty -->
+        <textarea id="json-input" placeholder="Paste your JSON here..."></textarea>
+
+        <!-- ↑ the button the user will click to submit the input -->
+        <button id="format-btn">Format JSON</button>
+        
+        <!-- creating the output area -->
+        <pre id="output"></pre>
+        
+    </main>
+
+   
+    <!--link the js script that will contain the json formatter logic  -->
+</body>
+</html>
