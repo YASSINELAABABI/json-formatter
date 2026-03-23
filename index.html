@@ -1,33 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <!-- ↑ appears in browser tab and when shared -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title displayed in browser tab and when link is shared -->
     <title>JSON Formatter - My First Tool</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <!-- ↑ connects our separate CSS file -->
-</head>
-<body>
-
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <main>
-        <!-- ↑ main title of the page -->   
-        <h1>JSON Formatter</h1>
-    
-        <!-- ↑ input textarea -->
-        <textarea id="json-input" placeholder="Paste your JSON here..."></textarea>
+      <!-- Main page heading -->
+      <h1>JSON Formatter</h1>
 
-        <!-- ↑ the button the user will click to submit the input -->
-        <button id="format-btn">Format JSON</button>
-        
-        <!-- creating the output area -->
-        <pre id="output"></pre>
-        
+      <!-- Input textarea for user to paste JSON -->
+      <textarea
+        id="json-input"
+        placeholder="Paste your JSON here..."
+      ></textarea>
+
+      <!-- Button to trigger JSON formatting -->
+      <button id="format-btn">Format JSON</button>
+
+      <!-- Output area to display formatted JSON -->
+      <pre id="output"></pre>
     </main>
 
-   
-    <!--link the js script that will contain the json formatter logic  -->
-</body>
+    <!-- Link to external JavaScript file with formatter logic -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
