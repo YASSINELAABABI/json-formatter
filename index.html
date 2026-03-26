@@ -1,34 +1,56 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Required metadata for correct text encoding -->
     <meta charset="UTF-8" />
+    <!-- Responsive layout so the page scales on mobile/desktop -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Page title displayed in browser tab and when link is shared -->
-    <title>JSON Formatter - My First Tool</title>
-
-    <!-- Link to external CSS stylesheet -->
+    <!-- Browser tab title -->
+    <title>json formatter</title>
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Main app container -->
     <main>
-      <!-- Main page heading -->
-      <h1>JSON Formatter</h1>
+      <!-- App title -->
+      <h1>JSON FORMATTER</h1>
 
-      <!-- Input textarea for user to paste JSON -->
+      <!-- Description paragraph 1 -->
+      <p id="p-1" class="paragraph">
+        the json formatter is a tool that allows you to format and beautify your
+        JSON data. It can be used to make your JSON data more readable and
+        easier to understand. You can also use it to validate your JSON data and
+        check for any errors.
+      </p>
+      <!-- Description paragraph 2 -->
+      <p id="p-2" class="paragraph">
+        To use the json formatter, simply copy and paste your JSON data into the
+        input field and click the "Format" button. The formatted JSON data will
+        be displayed in the output field. You can also choose to minify your
+        JSON data by clicking the "Minify" button.
+      </p>
+      <!-- Description paragraph 3 -->
+      <p id="p-3" class="paragraph">
+        The json formatter is a great tool for developers, data analysts, and
+        anyone who works with JSON data. It can help you save time and improve
+        your productivity by making it easier to work with JSON data.
+      </p>
+
+      <!-- Input area where user types or pastes raw JSON -->
       <textarea
         id="json-input"
-        placeholder="Paste your JSON here..."
+        placeholder="Enter your JSON data here..."
       ></textarea>
 
-      <!-- Button to trigger JSON formatting -->
-      <button id="format-btn">Format JSON</button>
+      <!-- Button to trigger formatting action -->
+      <button id="format-btn">Format</button>
 
-      <!-- Output area to display formatted JSON -->
-      <pre id="output"></pre>
+      <!-- Output area where nicely formatted JSON appears -->
+      <pre id="format-output"></pre>
     </main>
 
-    <!-- Link to external JavaScript file with formatter logic -->
+    <!-- JavaScript logic for formatting and interacting with UI -->
     <script src="js/script.js"></script>
   </body>
 </html>
